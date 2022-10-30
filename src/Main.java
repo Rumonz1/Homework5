@@ -30,7 +30,18 @@ public class Main {
         }else if (year % 100 !=0){
             System.out.println(+year + " год не является високосным");
         }
-        //Задание 4 - жэу видеоразбора
+        //Задание 4
+        int deliveryDistance = 22;
+        int deliveryDay;
+        if (deliveryDistance >=0 && deliveryDistance <=20){deliveryDay = 1;
+            System.out.println("Потребуется дней: " +deliveryDay);
+        } else if (deliveryDistance >=20 &&deliveryDistance <=60) {
+            deliveryDay = 2;
+            System.out.println("Потребуется дней: " + deliveryDay);
+        } else if (deliveryDistance >= 60 && deliveryDistance <=100) {deliveryDay = 3;
+            System.out.println("Потребуется дней: " +deliveryDay);
+        } else {
+            System.out.println("Дальше 100км доставка невозможна");}
         //Задание 5
         byte monthNumber = 12;
         switch (monthNumber){
